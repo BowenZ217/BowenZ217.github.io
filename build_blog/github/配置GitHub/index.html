@@ -221,7 +221,7 @@
   
 
 <div id="banner" class="banner" parallax=true
-     style="background: url('/img/default.jpeg') no-repeat center center; background-size: cover;">
+     style="background: url('/img/default.png') no-repeat center center; background-size: cover;">
   <div class="full-bg-img">
     <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
       <div class="banner-text text-center fade-in-up">
@@ -255,7 +255,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          undefined 字
+          1.4k 字
         
       </span>
     
@@ -266,7 +266,7 @@
         
         
         
-          NaN 分钟
+          12 分钟
         
       </span>
     
@@ -334,12 +334,12 @@
 </ul>
 <hr>
 <h1 id="密匙"><a href="#密匙" class="headerlink" title="密匙"></a>密匙</h1><h2 id="创建-SSH-密匙"><a href="#创建-SSH-密匙" class="headerlink" title="创建 SSH 密匙"></a>创建 SSH 密匙</h2><p>首先打开cmd，设置自己显示的用户名以及邮箱</p>
-<pre><code>git config --global user.name &quot;GitHub 用户名&quot;
+<pre><code class="hljs">git config --global user.name &quot;GitHub 用户名&quot;
 git config --global user.email &quot;GitHub 邮箱&quot;
 </code></pre>
 <p>如果设置成功，输入<code>git config --global user.email</code>和<code>git config --global user.name</code>应该会显示自己刚刚的用户名以及邮箱</p>
 <p>接着创建<code>SSH 密匙</code>，输入：</p>
-<pre><code>ssh-keygen -t rsa -C &quot;GitHub 邮箱&quot;
+<pre><code class="hljs">ssh-keygen -t rsa -C &quot;GitHub 邮箱&quot;
 </code></pre>
 <p>如果不懂可以一直回车，密钥会默认存在<code>C:\Users\用户名\.ssh</code>目录中（为隐藏文件）</p>
 <h2 id="为GitHub添加密匙"><a href="#为GitHub添加密匙" class="headerlink" title="为GitHub添加密匙"></a>为GitHub添加密匙</h2><p>用记事本打开刚刚创建的公钥<code>id_rsa.pub</code>，并复制里面的内容。</p>
@@ -348,16 +348,16 @@ git config --global user.email &quot;GitHub 邮箱&quot;
 <p><code>Key</code>粘贴复制刚刚的<code>id_rsa.pub</code>内容到</p>
 <p>点击<code>Add SSH key</code>完成添加。</p>
 <h2 id="验证"><a href="#验证" class="headerlink" title="验证"></a>验证</h2><p>输入：</p>
-<pre><code>ssh -T git@github.com
+<pre><code class="hljs">ssh -T git@github.com
 </code></pre>
 <p>出现</p>
-<pre><code>The authenticity of host &#39;github.com (140.82.114.3)&#39; can&#39;t be established.
+<pre><code class="hljs">The authenticity of host &#39;github.com (140.82.114.3)&#39; can&#39;t be established.
 ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
 Are you sure you want to continue connecting (yes/no)?
 </code></pre>
 <p>输入<code>yes</code></p>
 <p>当出现</p>
-<pre><code>Hi 你的名字! You&#39;ve successfully authenticated, but GitHub does not provide shell access
+<pre><code class="hljs">Hi 你的名字! You&#39;ve successfully authenticated, but GitHub does not provide shell access
 </code></pre>
 <p>时就表明成功了</p>
 <hr>
@@ -589,10 +589,10 @@ Are you sure you want to continue connecting (yes/no)?
     
       
       
-        <a href="/build_blog/github/%E5%88%9B%E5%BB%BAGiitHub%20Page/" title="创建GiitHub Page"
+        <a href="/build_blog/github/%E5%88%9B%E5%BB%BAGitHub%20Page/" title="创建GitHub Page"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">创建GiitHub Page</span>
+          <span class="category-post">创建GitHub Page</span>
         </a>
       
     
@@ -685,10 +685,10 @@ Are you sure you want to continue connecting (yes/no)?
     
       
       
-        <a href="/build_blog/github/%E5%88%9B%E5%BB%BAGiitHub%20Page/" title="创建GiitHub Page"
+        <a href="/build_blog/github/%E5%88%9B%E5%BB%BAGitHub%20Page/" title="创建GitHub Page"
            class="list-group-item list-group-item-action
            ">
-          <span class="category-post">创建GiitHub Page</span>
+          <span class="category-post">创建GitHub Page</span>
         </a>
       
     
